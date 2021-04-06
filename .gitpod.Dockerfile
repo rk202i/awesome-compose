@@ -5,5 +5,5 @@ FROM gitpod/workspace-full
 # RUN brew install bastet
 #
 # More information: https://www.gitpod.io/docs/config-docker/
-RUN sudo docker-up
-RUN sudo adduser gitpod sudo
+USER root
+RUN docker-up
